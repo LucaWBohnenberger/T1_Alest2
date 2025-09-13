@@ -5,3 +5,9 @@ class Ordem:
         
     def __lt__(self, other):
         return self.valor < other.valor
+
+    def __gt__(self, other):
+        return self.valor > other.valor
+    
+    def __str__(self):
+        return f"Quantidade: {self.quantidade}\nValor: {self.valor}"
